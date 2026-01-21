@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีใช้งาน FitVision - คู่มือฉบับเข้าใจง่าย</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+        }
+
+        .step {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-content {
+            margin-left: 55px;
+            font-size: 1.1rem;
+        }
+
+        .tip {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .tip-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .warning {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .position-guide {
+            background: #e7f3ff;
+            border: 2px solid #2196F3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .position-title {
+            font-size: 1.3rem;
+            color: #2196F3;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .do {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #28a745;
+        }
+
+        .dont {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #dc3545;
+        }
+
+        .do h4,
+        .dont h4 {
+            margin-bottom: 10px;
+        }
+
+        .do h4::before {
+            content: "✅ ";
+        }
+
+        .dont h4::before {
+            content: "❌ ";
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 20px 0;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏋️ วิธีใช้งาน FitVision</h1>
+        <p class="subtitle">คู่มือฉบับเข้าใจง่าย - ทำตามได้ทันที!</p>
+
+        <!-- Step 1 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">1</span>
+                <span>เปิดเว็บไซต์</span>
+            </div>
+            <div class="step-content">
+                <p>เปิด browser (Chrome หรือ Safari แนะนำ) แล้วไปที่:</p>
+                <p
+                    style="background: #fff; padding: 15px; border-radius: 5px; margin: 10px 0; font-family: monospace; font-size: 1rem;">
+                    <strong>https://orimsaa.github.io/fitvision/</strong>
+                </p>
+                <p>หรือสแกน QR Code (ถ้ามี)</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">2</span>
+                <span>กดปุ่ม "Start Workout"</span>
+            </div>
+            <div class="step-content">
+                <p>บนหน้าแรก จะเห็นปุ่มสีม่วงใหญ่ๆ ที่เขียนว่า <strong>"Start Workout"</strong></p>
+                <p>👆 กดปุ่มนี้</p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">3</span>
+                <span>อนุญาตให้ใช้กล้อง</span>
+            </div>
+            <div class="step-content">
+                <p>Browser จะขออนุญาตใช้กล้อง</p>
+                <p>✅ กด <strong>"อนุญาต"</strong> หรือ <strong>"Allow"</strong></p>
+
+                <div class="warning">
+                    <strong>⚠️ สำคัญ!</strong> ถ้าไม่อนุญาต จะใช้งานไม่ได้
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4 - วิธียืน -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">4</span>
+                <span>ยืนในตำแหน่งที่ถูกต้อง</span>
+            </div>
+            <div class="step-content">
+                <div class="position-guide">
+                    <div class="position-title">📍 ตำแหน่งที่ถูกต้อง</div>
+
+                    <ul>
+                        <li><span class="emoji">📏</span> <strong>ระยะห่าง:</strong> ห่างจากกล้อง 2-3 เมตร</li>
+                        <li><span class="emoji">👤</span> <strong>มุมกล้อง:</strong> ตั้งกล้องให้เห็นตัวเต็ม
+                            (ศีรษะถึงเท้า)</li>
+                        <li><span class="emoji">📐</span> <strong>มุมมอง:</strong> ยืนหันข้างให้กล้อง
+                            (มองเห็นด้านข้างของร่างกาย)</li>
+                        <li><span class="emoji">💡</span> <strong>แสงสว่าง:</strong> ต้องมีแสงเพียงพอ ไม่มืดเกินไป</li>
+                        <li><span class="emoji">🎨</span> <strong>พื้นหลัง:</strong> พื้นหลังเรียบๆ ไม่วุ่นวาย</li>
+                    </ul>
+                </div>
+
+                <div class="do-dont">
+                    <div class="do">
+                        <h4>ทำ</h4>
+                        <ul>
+                            <li>ยืนหันข้างให้กล้อง</li>
+                            <li>เห็นตัวเต็มในกล้อง</li>
+                            <li>พื้นหลังเรียบ</li>
+                            <li>แสงสว่างดี</li>
+                            <li>ใส่เสื้อผ้าพอดีตัว</li>
+                        </ul>
+                    </div>
+
+                    <div class="dont">
+                        <h4>ไม่ทำ</h4>
+                        <ul>
+                            <li>ยืนหันหน้าตรงกล้อง</li>
+                            <li>ยืนใกล้เกินไป</li>
+                            <li>พื้นหลังวุ่นวาย</li>
+                            <li>แสงมืดเกินไป</li>
+                            <li>ใส่เสื้อหลวมเกินไป</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">5</span>
+                <span>เริ่มทำ Deadlift</span>
+            </div>
+            <div class="step-content">
+                <p><strong>ท่า Deadlift ที่ถูกต้อง:</strong></p>
+
+                <ol style="margin-left: 20px;">
+                    <li><strong>เริ่มต้น:</strong> ยืนตรง เท้าห่างเท่าไหล่</li>
+                    <li><strong>ก้มลง:</strong> งอสะโพก ก้มตัวลง เข่างอเล็กน้อย</li>
+                    <li><strong>หลังตรง:</strong> รักษาหลังให้ตรงตลอด (สำคัญมาก!)</li>
+                    <li><strong>ยืนขึ้น:</strong> ใช้สะโพกและขาดันตัวขึ้น</li>
+                    <li><strong>ท่าจบ:</strong> ยืนตรง แต่อย่าเอนหลังมากเกินไป</li>
+                </ol>
+
+                <div class="tip">
+                    <span class="tip-icon">💡</span>
+                    <strong>เคล็ดลับ:</strong> ทำช้าๆ ครั้งแรก ให้ระบบจับท่าได้ชัดเจน
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">6</span>
+                <span>ดูผลลัพธ์</span>
+            </div>
+            <div class="step-content">
+                <p>ระบบจะแสดง:</p>
+                <ul>
+                    <li><span class="emoji">👤</span> <strong>โครงกระดูก (Skeleton):</strong> เส้นสีน้ำเงินบนตัวคุณ</li>
+                    <li><span class="emoji">✅</span> <strong>ท่าถูก:</strong> เห็นเครื่องหมาย ✓ สีเขียว</li>
+                    <li><span class="emoji">❌</span> <strong>ท่าผิด:</strong> เห็นเครื่องหมาย ✗ สีแดง + คำแนะนำ</li>
+                    <li><span class="emoji">🔢</span> <strong>จำนวนครั้ง:</strong> นับจำนวนครั้งที่ทำได้</li>
+                </ul>
+
+                <div class="tip">
+                    <span class="tip-icon">💡</span>
+                    <strong>คำแนะนำที่อาจเห็น:</strong>
+                    <ul>
+                        <li>"Keep hips higher" = ยกสะโพกขึ้น</li>
+                        <li>"Avoid over-extension" = อย่าเอนหลังมาก</li>
+                        <li>"Straighten your knees" = เหยียดเข่าให้ตรง</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">7</span>
+                <span>ปุ่มควบคุม</span>
+            </div>
+            <div class="step-content">
+                <p>ด้านล่างหน้าจอมีปุ่ม 3 ปุ่ม:</p>
+                <ul>
+                    <li><span class="emoji">🔄</span> <strong>ปุ่มซ้าย:</strong> สลับกล้องหน้า/หลัง</li>
+                    <li><span class="emoji">⏹️</span> <strong>ปุ่มกลาง (สีแดง):</strong> หยุดและกลับหน้าแรก</li>
+                    <li><span class="emoji">👤</span> <strong>ปุ่มขวา:</strong> เปิด/ปิดโครงกระดูก</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ปัญหาที่พบบ่อย -->
+        <div class="step" style="background: #fff3cd; border-left-color: #ffc107;">
+            <div class="step-title">
+                <span class="step-number" style="background: #ffc107;">?</span>
+                <span>ปัญหาที่พบบ่อย</span>
+            </div>
+            <div class="step-content">
+                <p><strong>❓ กล้องไม่เปิด</strong></p>
+                <ul>
+                    <li>ตรวจสอบว่ากดอนุญาตแล้ว</li>
+                    <li>ลองรีเฟรชหน้าเว็บ (F5)</li>
+                    <li>ลองเปลี่ยน browser</li>
+                </ul>
+
+                <p><strong>❓ ไม่เห็นโครงกระดูก</strong></p>
+                <ul>
+                    <li>ยืนให้เห็นตัวเต็มในกล้อง</li>
+                    <li>เพิ่มแสงสว่าง</li>
+                    <li>ลดความวุ่นวายของพื้นหลัง</li>
+                    <li>ยืนหันข้างให้กล้อง</li>
+                </ul>
+
+                <p><strong>❓ ระบบบอกว่าท่าผิดตลอด</strong></p>
+                <ul>
+                    <li>ทำช้าๆ ให้ชัดเจน</li>
+                    <li>ตรวจสอบท่าตามคำแนะนำ</li>
+                    <li>อ่านข้อความที่ระบบแนะนำ</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ปุ่มเริ่มใช้งาน -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="index.html" class="btn">🚀 เริ่มใช้งานเลย!</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>FitVision</strong> - AI Exercise Form Trainer</p>
+            <p>ความแม่นยำ 93.69% | ใช้งานฟรี | ไม่บันทึกวิดีโอ</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                💡 <strong>เคล็ดลับ:</strong> ใช้บนมือถือได้ง่ายกว่า - ตั้งมือถือแล้วทำท่าได้เลย!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
